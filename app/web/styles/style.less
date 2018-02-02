@@ -1,7 +1,7 @@
 // get the page ready
 * { outline: none; box-sizing: border-box; }
 body { padding: 0; margin: 0; }
-html, body, .react-native-web { height: 100%; width: 100%; position: absolute; top: 0; right: 0; overflow: hidden;}
+html, body, .react-native-web { height: 100%; width: 100%; position: absolute; top: 0; right: 0; overflow: hidden; background-color: #e5edf9}
 body, button, input {
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-size: 1em;
@@ -12,11 +12,26 @@ body, button, input {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .hello-world {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50%;
+    margin: 25px;
+    padding: 15px;
+    border-color: black;
+    border-radius: 4px;
+    border-width: 2px;
+    width: 120px;
+  }
+
+  .hello-world-text {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .multiplatformexplanation {
+    font-size: 22px;
+  }
+  .toggle-explanation-container {
+    margin-top: 20px;
   }
 }

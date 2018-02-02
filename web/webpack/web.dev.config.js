@@ -32,23 +32,22 @@ module.exports = {
             transforms: [{
               transform: 'react-transform-hmr',
               imports: ['react'],
-              // this is important for Webpack HMR:
               locals: ['module']
-            }],
-          }]],
-        },
-      },
-    ],
+            }]
+          }]]
+        }
+      }
+    ]
   },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('development'),
-        PLATFORM_ENV: JSON.stringify('web'),
+        PLATFORM_ENV: JSON.stringify('web')
       },
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
 };
