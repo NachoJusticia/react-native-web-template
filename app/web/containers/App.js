@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 // components
 import Header     from '../components/Header';
 import HelloWorld from '../components/HelloWorld';
+import Presentation from '../components/Presentation';
 // actions
 import { toggleColor } from '../../actions/actions';
 
@@ -16,6 +17,7 @@ class ReactNativeWebHelloWorld extends Component {
     return (
       <div className="react-native-web">
         <Header />
+        <Presentation />
         <HelloWorld
           onClick={() => dispatch(toggleColor())}
           color={color}

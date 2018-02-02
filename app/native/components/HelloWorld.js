@@ -17,13 +17,14 @@ export default class HelloWorld extends Component {
       },
       buttonContainer: {
         borderRadius: 4,
-        backgroundColor: color
+        backgroundColor: color,
+        width: 120
       }
     });
     return (
       <View>
         <View style={styles.buttonContainer}>
-          <Text onPress={onPress} style={styles.button} >Toggle color</Text>
+          <Text onPress={onPress} style={styles.button}>Toggle color</Text>
         </View>
       </View>
     );
