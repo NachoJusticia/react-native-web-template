@@ -1,41 +1,15 @@
-import clone        from 'clone';
 import assign       from 'object-assign';
-import {
-  TOGGLE_COLOR,
-  EXAMPLE_REQUEST_START,
-  EXAMPLE_REQUEST_DATA,
-} from '../constants/Constants';
 
-const initialState = {
-  color: 'red',
-  data: {
-    loading: false,
-    objects: [],
-  },
+const defaultState = {
+  color: '#8ea3ff'
 };
 
-export default function reduce(state = initialState, action) {
+export default function reduce(state = defaultState, action) {
   switch (action.type) {
-  case TOGGLE_COLOR:
+  case 'TOGGLE_COLOR':
     return assign({}, state, {
-      color: state.color === 'red' ? 'blue' : 'red'
+      color: state.color === '#90ff8c' ? '#8ea3ff' : '#90ff8c'
     });
-
-  case EXAMPLE_REQUEST_START:
-    return assign({}, state, {
-      data: assign({}, state.data, {
-        loading: true,
-      }),
-    });
-
-  case EXAMPLE_REQUEST_DATA:
-    return assign({}, state, {
-      data: assign({}, state.data, {
-        loading: false,
-        objects: action.data,
-      }),
-    });
-
   default:
     return state;
   }

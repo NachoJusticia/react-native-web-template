@@ -1,10 +1,15 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class HelloWorld extends Component {
   render() {
     const { onClick, color } = this.props;
     return (
-      <div className="hello-world" onClick={onClick} style={{color: color}}>Hello World</div>
+      <div>
+        <div className="hello-world" onClick={onClick} style={{ backgroundColor: color }}>
+          Toggle color
+        </div>
+      </div>
     );
   }
 }

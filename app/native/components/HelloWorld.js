@@ -2,21 +2,29 @@ import React, { Component, PropTypes } from 'react';
 import {
   View,
   Text,
-  StyleSheet,
+  StyleSheet
 } from 'react-native';
 
 export default class HelloWorld extends Component {
+
   render() {
     const { onPress, color } = this.props;
-    const style = StyleSheet.create({
-      helloWorld: {
-        color: color,
+
+    const styles = StyleSheet.create({
+      button: {
         textAlign: 'center',
+        margin: 10
+      },
+      buttonContainer: {
+        borderRadius: 4,
+        backgroundColor: color
       }
     });
     return (
       <View>
-        <Text onPress={onPress} style={style.helloWorld}>Hello World</Text>
+        <View style={styles.buttonContainer}>
+          <Text onPress={onPress} style={styles.button} >Toggle color</Text>
+        </View>
       </View>
     );
   }
