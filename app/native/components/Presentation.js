@@ -5,6 +5,7 @@ import {
   Platform,
   StyleSheet
 } from 'react-native';
+import I18n from './../../i18n';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,14 +29,14 @@ export default class Presentation extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.helloWorld}>
-          Hello World!
+          {I18n.HELLO_WORLD}
         </Text>
         <Text style={styles.multiplatformExplanation}>
-          I am a multiplaftorm application for iOS, Android and Web. Right now I'm running in an {Platform.OS === 'ios' ? 'iOS' : 'Android'} device, and I share all the logic with my brothers!
+          {I18n.PRESENTATION1}{Platform.OS === 'ios' ? 'iOS' : 'Android'}{I18n.PRESENTATION2}
         </Text>
         <View style={styles.toggleExplanationContainer}>
           <Text>
-            The following button dispatch an action to toggle the background color of this element. This logic has not been implemented three times... :)
+            {I18n.TOGGLE_BUTTON_EXPLANATION}
           </Text>
         </View>
       </View>

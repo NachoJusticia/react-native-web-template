@@ -5,6 +5,7 @@ import ReactNativeWeb from './App';
 
 
 export default class Root extends Component {
+
   render() {
     return (
       <Provider store={this.props.store}>
