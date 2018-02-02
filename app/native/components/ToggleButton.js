@@ -5,7 +5,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-export default class HelloWorld extends Component {
+export default class ToggleButton extends Component {
 
   render() {
     const { onPress, color } = this.props;
@@ -31,7 +31,7 @@ export default class HelloWorld extends Component {
   }
 }
 
-HelloWorld.propTypes = {
+ToggleButton.propTypes = {
   onPress: PropTypes.func.isRequired,
   color: PropTypes.string.isRequired,
 }

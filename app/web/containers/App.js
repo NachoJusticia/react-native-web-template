@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 // components
 import Header     from '../components/Header';
-import HelloWorld from '../components/HelloWorld';
+import ToggleButton from '../components/ToggleButton';
 import Presentation from '../components/Presentation';
 // actions
 import { toggleColor } from '../../actions/actions';
 
 
-class ReactNativeWebHelloWorld extends Component {
+class ReactNativeWeb extends Component {
 
   render() {
     const { dispatch, color } = this.props;
@@ -18,7 +18,7 @@ class ReactNativeWebHelloWorld extends Component {
       <div className="react-native-web">
         <Header />
         <Presentation />
-        <HelloWorld
+        <ToggleButton
           onClick={() => dispatch(toggleColor())}
           color={color}
         />
@@ -27,11 +27,11 @@ class ReactNativeWebHelloWorld extends Component {
   }
 }
 
-ReactNativeWebHelloWorld.propTypes = {
+ReactNativeWeb.propTypes = {
   dispatch: PropTypes.func.isRequired,
   color: PropTypes.string.isRequired
 };
 
 const select = state => state;
 
-export default connect(select)(ReactNativeWebHelloWorld);
+export default connect(select)(ReactNativeWeb);

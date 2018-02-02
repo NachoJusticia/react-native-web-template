@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class HelloWorld extends Component {
+
+export default class ToggleButton extends Component {
+
   render() {
     const { onClick, color } = this.props;
     return (
@@ -14,7 +16,7 @@ export default class HelloWorld extends Component {
   }
 }
 
-HelloWorld.propTypes = {
+ToggleButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   color: PropTypes.string.isRequired,
 }
