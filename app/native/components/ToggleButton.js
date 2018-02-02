@@ -4,6 +4,8 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
+import I18n from './../../i18n';
+
 
 export default class ToggleButton extends Component {
 
@@ -21,10 +23,11 @@ export default class ToggleButton extends Component {
         width: 120
       }
     });
+
     return (
       <View>
         <View style={styles.buttonContainer}>
-          <Text onPress={onPress} style={styles.button}>Toggle color</Text>
+          <Text onPress={onPress} style={styles.button}>{I18n.TOGGLE_BUTTON}</Text>
         </View>
       </View>
     );
