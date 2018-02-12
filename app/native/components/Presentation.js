@@ -23,9 +23,11 @@ const styles = StyleSheet.create({
   }
 });
 
+
 export default class Presentation extends Component {
 
   render() {
+
     return (
       <View style={styles.container}>
         <Text style={styles.helloWorld}>
