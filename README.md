@@ -65,3 +65,33 @@ On the other hand, this project contains two subprojects for rendering the corre
 - `start`: to launch the react-native project.
 - `web-bundle`: to build the web application in production mode with webpack (minified js).
 - `web-dev-bundle`: to build the web application in development mode with webpack (hot reload).
+
+## Get started - development environment
+- Clone this repository:
+`git clone https://github.com/NachoJusticia/react-native-web-template.git`
+- Install dependencies: `npm install`
+
+### Android
+Check that you have specified in the file ./android/local.properties your NDK and SDK paths.
+
+```
+ndk.dir=/Users/[username]/Library/Android/sdk/ndk-bundle
+sdk.dir=/Users/[username]/Library/Android/sdk
+```
+
+Then you can open an Android simulator and launch the command `react-native run-android`.
+
+### iOS
+Open the project with Xcode, choose a simulator and build the application or just launch the command `react-native run-ios`.
+
+### Web
+Launch the command `npm run web-dev-bundle` and open your favorite browser in `http://localhost:3001`.
+
+## Screenshot
+
+![multiplattform](./screenshots/multiplattform.png)
+
+More screenshots can be found under `./screenshots` folder.
+
+## Contributing
+Contributors are welcome! Please fork this repository and make Pull Requests.
