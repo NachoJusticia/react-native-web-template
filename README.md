@@ -1,5 +1,5 @@
 # react-native-web-template
-This project is an amazing start point for building multiplattform applications for iOS, Android and browesr sharing part of the code.
+This project is an amazing start point for building multiplattform applications for iOS, Android and browser sharing part of the code.
 
 ## Description
 The code that is shared corresponds to the logic of the application:
