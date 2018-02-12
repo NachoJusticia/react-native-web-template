@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import thunk        from 'redux-thunk';
-import StockApp     from '../reducers';
+import thunk from 'redux-thunk';
+import StockApp from '../reducers';
 import createLogger from 'redux-logger';
 
 // create a store that has redux-thunk middleware, and dev tooling enabled.
