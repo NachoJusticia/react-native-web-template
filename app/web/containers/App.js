@@ -12,6 +12,7 @@ import { toggleColor } from '../../actions/actions';
 class ReactNativeWeb extends Component {
 
   render() {
+
     const { dispatch, color } = this.props;
 
     return (

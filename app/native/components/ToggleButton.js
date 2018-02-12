@@ -10,6 +10,7 @@ import I18n from './../../i18n';
 export default class ToggleButton extends Component {
 
   render() {
+
     const { onPress, color } = this.props;
 
     const styles = StyleSheet.create({
@@ -36,5 +37,5 @@ export default class ToggleButton extends Component {
 
 ToggleButton.propTypes = {
   onPress: PropTypes.func.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired
 }

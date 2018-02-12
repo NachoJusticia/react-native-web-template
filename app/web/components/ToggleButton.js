@@ -6,6 +6,7 @@ import I18n from './../../i18n';
 export default class ToggleButton extends Component {
 
   render() {
+
     const { onClick, color } = this.props;
     return (
       <div>
@@ -19,5 +20,5 @@ export default class ToggleButton extends Component {
 
 ToggleButton.propTypes = {
   onClick: PropTypes.func.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired
 }

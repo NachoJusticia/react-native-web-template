@@ -1,0 +1,80 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "react-native"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "constructor-super": "warn",
+    "default-case": 2,
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "hapi/hapi-scope-start": "off",
+    "import/no-commonjs": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "keyword-spacing": 2,
+    "no-console": [
+      "error"
+    ],
+    "no-const-assign": "warn",
+    "no-dupe-keys": 2,
+    "no-duplicate-case": 2,
+    "no-else-return": 2,
+    "no-empty": 2,
+    "no-extra-boolean-cast": 2,
+    "no-extra-semi": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxEOF": 0
+      }
+    ],
+    "no-redeclare": 2,
+    "no-this-before-super": "warn",
+    "no-trailing-spaces": "error",
+    "no-undef": "warn",
+    "no-unreachable": 2,
+    "no-unused-vars": "off",
+    "no-var": 2,
+    "react/jsx-boolean-value": "off",
+    "react/prefer-stateless-function": "off",
+    "quotes": [
+      2,
+      "single"
+    ],
+    "valid-typeof": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}

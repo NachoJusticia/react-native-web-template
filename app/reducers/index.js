@@ -4,6 +4,7 @@ const defaultState = {
   color: '#8ea3ff'
 };
 
+
 export default function reduce(state = defaultState, action) {
   switch (action.type) {
     case 'TOGGLE_COLOR':
